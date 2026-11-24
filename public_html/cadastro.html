@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+</head>
+
+<body>
+
+    <h1>Formulário de Cadastro</h1>
+
+    <form action="processa.php" method="POST">
+
+        <section>
+            <label for="nome_completo">Nome completo:</label>
+            <input type="text" name="nome_completo" id="nome_completo" required>
+        </section>
+
+        <br>
+
+        <section>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required>
+        </section>
+
+        <br>
+
+        <section>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" minlength="6" required>
+        </section>
+
+        <br>
+
+        <section>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" min="10" max="120" step="1" required>
+        </section>
+
+        <br>
+
+        <section>
+            <label for="genero">Gênero:</label>
+            <select name="genero" id="genero" required>
+                <option value="">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="prefiro_nao_opinar">
+                    Prefiro não opinar
+                </option>
+            </select>
+        </section>
+
+        <br>
+
+        <section>
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade" required>
+        </section>
+
+        <br>
+
+        <section>
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado" required>
+                <option value="">Selecione o estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </section>
+
+        <br>
+
+        <section>
+            <input type="checkbox" name="termos_uso" id="termos_uso" value="aceito" required>
+            <label for="termos_uso">
+                Li e aceito os termos de uso.
+            </label>
+        </section>
+
+        <br>
+
+        <footer>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar formulário">
+        </footer>
+
+    </form>
+
+</body>
+
+</html>
